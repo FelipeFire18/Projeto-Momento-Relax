@@ -20,3 +20,27 @@ body {
     transform: scale(1.5);
     background: #00a8ff;
 }
+
+/* MODO ESCURO */
+.dark-mode {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .card {
+    background: #2c2c2c;
+    color: white;
+}
+
+/* Cores da respiração */
+.inspirar {
+    background: #00a8ff;
+}
+
+.segurar {
+    background: #fbc531;
+}
+
+.expirar {
+    background: #e84118;
+}
