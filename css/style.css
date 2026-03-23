@@ -32,6 +32,17 @@ body {
     color: white;
 }
 
+/* Botão Sobre no modo escuro */
+.dark-mode .btn-sobre {
+    border-color: white;
+    color: white;
+}
+
+.dark-mode .btn-sobre:hover {
+    background-color: white;
+    color: black;
+}
+
 /* Cores da respiração */
 .inspirar {
     background: #00a8ff;
