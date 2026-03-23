@@ -1,0 +1,22 @@
+body {
+    background: #f2f2f2;
+}
+
+.circulo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #4cd137;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    transition: 1s;
+}
+
+.expandir {
+    transform: scale(1.5);
+    background: #00a8ff;
+}
