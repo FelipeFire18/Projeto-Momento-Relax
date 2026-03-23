@@ -55,3 +55,16 @@ body {
 .expirar {
     background: #e84118;
 }
+
+/* BOTÃO ATIVO */
+.btn-respiracao.ativo {
+    background-color: #2ecc71 !important;
+    border-color: #2ecc71 !important;
+    color: white;
+}
+
+/* Dark mode compatível */
+.dark-mode .btn-respiracao.ativo {
+    background-color: #00a8ff !important;
+    border-color: #00a8ff !important;
+}

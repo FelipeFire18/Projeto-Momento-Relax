@@ -74,6 +74,23 @@ function iniciarRespiracao(inspirarTempo, segurarTempo, expirarTempo) {
 
     }, 1000);
 }
+
+function selecionarRespiracao(botao, i, s, e) {
+
+    const botoes = document.querySelectorAll(".btn-respiracao");
+
+    botoes.forEach(btn => {
+        btn.classList.remove("btn-primary", "btn-success");
+        btn.classList.add("btn-secondary"); // volta pro cinza
+    });
+
+    // botão ativo
+    botao.classList.remove("btn-secondary");
+    botao.classList.add("btn-success"); // verde ativo
+
+    iniciarRespiracao(i, s, e);
+}
+
 // parar
 function pararRespiracao() {
     clearInterval(intervalo);
