@@ -34,14 +34,15 @@ function toggleSom() {
 // =========================
 // 🫁 RESPIRAÇÃO COMPLETA
 // =========================
-function iniciarRespiracao() {
+function iniciarRespiracao(inspirarTempo, segurarTempo, expirarTempo) {
+
     const circulo = document.getElementById("circulo");
     const contador = document.getElementById("contador");
 
     clearInterval(intervalo);
 
-    let tempo = 4;
-    fase = 0;
+    let fase = 0;
+    let tempo = inspirarTempo;
 
     intervalo = setInterval(() => {
 
@@ -66,14 +67,13 @@ function iniciarRespiracao() {
         if (tempo < 0) {
             fase = (fase + 1) % 3;
 
-            if (fase === 0) tempo = 4;   // inspirar
-            if (fase === 1) tempo = 4;   // segurar
-            if (fase === 2) tempo = 4;   // expirar
+            if (fase === 0) tempo = inspirarTempo;
+            if (fase === 1) tempo = segurarTempo;
+            if (fase === 2) tempo = expirarTempo;
         }
 
     }, 1000);
 }
-
 // parar
 function pararRespiracao() {
     clearInterval(intervalo);
